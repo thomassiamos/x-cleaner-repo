@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "X Cleaner",
+  "version": "2.4",
+  "description": "Unlike tweets, remove bookmarks, undo reposts, delete posts or unfollow accounts on X, one at a time, with a live counter. Keeps running in a background tab.",
+  "action": {
+    "default_title": "Open X Cleaner"
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "content_scripts": [
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "stealth.js"
+      ],
+      "run_at": "document_start",
+      "world": "MAIN"
+    },
+    {
+      "matches": [
+        "https://x.com/*",
+        "https://twitter.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

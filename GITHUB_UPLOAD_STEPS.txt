@@ -1,0 +1,17 @@
+Delete this file before you upload (it is only for you).
+
+1. Open LICENSE and replace YOUR NAME with your name.
+2. Go to github.com, click New repository.
+   - Name: x-cleaner (or anything you like)
+   - Description: Chrome extension that unlikes tweets, removes bookmarks, undoes reposts, deletes posts and unfollows accounts on X
+   - Public, and leave "Add a README" unticked (you already have one).
+3. On the new empty repo page click "uploading an existing file".
+4. Open this folder and select ALL the files inside it (not the folder itself),
+   then drag them onto the GitHub page. Check that .gitignore is included.
+5. Click Commit changes.
+6. Optional: add screenshots. Take them on x.com, upload them to the repo in a
+   "screenshots" folder, and add a line to README.md under the title, for example:
+   ![panel](screenshots/panel.png)
+7. Optional: Releases > Create a new release > tag v2.4 > attach a zip of these
+   files, so people can download it without cloning.
+8. Optional: Settings > Topics: chrome-extension, twitter, x, unlike, unfollow.
